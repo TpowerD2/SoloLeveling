@@ -1047,10 +1047,11 @@ Town.characterRespec = function () {// Akara reset for build change
 	if (Misc.checkQuest(41, 0)) {
 		return true;
 	}
+	if (!Misc.checkQuest(1, 0) && !Town.goToTown(1)) {
+		return false;
+	}
 
-	if (me.charlvl === respecOne || me.charlvl === respecTwo) {
-		Precast.doPrecast(true);
-		Town.goToTown(1);
+	if (me.charlvl >= respecOne || me.charlvl >= respecTwo) {
 		me.overhead('time to respec');
 		Town.npcInteract("akara");
 		delay(10 + me.ping * 2);

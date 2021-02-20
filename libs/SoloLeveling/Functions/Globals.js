@@ -18,8 +18,8 @@ var difficulty = ['Normal', 'Nightmare', 'Hell'];
 
 // Character Respecialization Variables
 // ClassLevel = ["Amazon", "Sorceress", "Necromancer", "Paladin", "Barbarian", "Druid", "Assassin"][me.classid];
-const respecOne = [ 0, 30, 26, 25, 0, 24, 30][me.classid];
-const respecTwo = [ 0, 85, 75, 85, 0, 75, 100][me.classid];
+const respecOne = [ 0, 30, 26, 18, 0, 24, 30][me.classid];
+const respecTwo = [ 0, 85, 75, 35, 0, 75, 100][me.classid];
 var	levelcap = [35, 65, 100][me.diff];
 
 // SoloLeveling Pickit Items

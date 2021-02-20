@@ -295,7 +295,7 @@ function LoadConfig () {
 		Config.MinColumn[2] = Config.BeltColumn[2] !== "rv" ? Math.max(1, Storage.BeltSize() - 1) : 0;
 		Config.MinColumn[3] = Config.BeltColumn[3] !== "rv" ? Math.max(1, Storage.BeltSize() - 1) : 0;
 		var bufferHP = [13, 3, 3, 0][chooseBuffer];
-		var bufferMP = [0, 6, 6, 0][chooseBuffer];
+		var bufferMP = [0, 6, 10,10][chooseBuffer];
 		var bufferRV = [0, 4, 4, 4][chooseBuffer];
 		Config.HPBuffer = bufferHP;
 		Config.MPBuffer = bufferMP;
